@@ -1,0 +1,83 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+}
+.container{
+    background-color: hsl(0, 0%, 0%);
+    max-width: 310px;
+    height: auto;
+    padding: 5px;
+    border-radius: 10px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+#display{
+    width: 100%;
+    height: 80px;
+    border: none;
+    outline: none;
+    text-align: right;
+    padding-right: 5px;
+    font-size: 60px;
+    background-color: hsl(0, 0%, 0%);
+    margin: 30px 0 10px 0;
+    color: white;
+}
+#display::placeholder{
+    color: white;
+}
+.numkeys{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    gap: 5px;
+    align-items: center;
+}
+.nums{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%; 
+    border: none;
+    background-color: hsl(0, 0%, 30%);
+    color: white;
+    font-size: 18px;
+}
+.nums:hover{
+    background-color: hsl(0, 0%, 35%);
+}
+.nums:active{
+    background-color: hsl(0, 0%, 40%);
+}
+.special{
+    background-color: hsl(0, 0%, 65%);
+    color: black;
+
+}
+.special:hover{
+    background-color: hsl(0, 0%, 70%);
+}
+.special:active{
+    background-color: hsl(0, 0%, 75%);
+}
+#operator{
+    background-color: hsl(36, 100%, 50%);
+}
+#operator:hover{
+    background-color: hsl(36, 100%, 60%);
+}
+#operator:active{
+    background-color: hsl(36, 100%, 70%);
+}
+.calculate{
+    grid-column: 3 / 5;
+    width: auto;
+    
+    border-radius: 5px;
+}

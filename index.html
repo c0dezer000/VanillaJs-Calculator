@@ -8,30 +8,31 @@
 </head>
 <body>
     <div class="container">
-        <input type="text" placeholder="0" readonly>
+        <input id="display" placeholder="0" readonly>
+        <div class="numkeys">
+            <button class="nums special" onclick="clearValue()">AC</button>
+            <button class="nums special" onclick="switchValue()">+/-</button>
+            <button class="nums special" onclick="percentage()">%</button>
+            <button class="nums" id="operator" onclick="displayValue('/')">/</button>
+            <button class="nums" onclick="displayValue('7')">7</button>
+            <button class="nums" onclick="displayValue('8')">8</button>
+            <button class="nums" onclick="displayValue('9')">9</button>
+            <button class="nums" id="operator" onclick="displayValue('*')">x</button>
+            <button class="nums" onclick="displayValue('4')">4</button>
+            <button class="nums" onclick="displayValue('5')">5</button>
+            <button class="nums" onclick="displayValue('6')">6</button>
+            <button class="nums" id="operator" onclick="displayValue('-')">-</button>
+            <button class="nums" onclick="displayValue('1')">1</button>
+            <button class="nums" onclick="displayValue('2')">2</button>
+            <button class="nums" onclick="displayValue('3')">3</button>
+            <button class="nums" id="operator" onclick="displayValue('+')">+</button>
+            <button class="nums" onclick="displayValue('0')">0</button>
+            <button class="nums" onclick="displayValue('.')">.</button>
+            <button class="nums calculate" onclick="calculateValue()">=</button>
+    
+        </div>
     </div>
-    <div class="numkeys">
-        <button class="nums" onclick="displayValue()">AC</button>
-        <button class="nums" onclick="displayValue()">+/-</button>
-        <button class="nums" onclick="displayValue()">%</button>
-        <button class="nums" onclick="displayValue()">%</button>
-        <button class="nums" onclick="displayValue()">7</button>
-        <button class="nums" onclick="displayValue()">8</button>
-        <button class="nums" onclick="displayValue()">9</button>
-        <button class="nums" onclick="displayValue()">X</button>
-        <button class="nums" onclick="displayValue()">4</button>
-        <button class="nums" onclick="displayValue()">5</button>
-        <button class="nums" onclick="displayValue()">5</button>
-        <button class="nums" onclick="displayValue()">-</button>
-        <button class="nums" onclick="displayValue()">1</button>
-        <button class="nums" onclick="displayValue()">2</button>
-        <button class="nums" onclick="displayValue()">3</button>
-        <button class="nums" onclick="displayValue()">+</button>
-        <button class="nums" onclick="displayValue()">0</button>
-        <button class="nums" onclick="displayValue()">.</button>
-        <button class="nums" onclick="displayValue()">=</button>
-
-    </div>
+    
     <script src="index.js"></script>
 </body>
 </html>
